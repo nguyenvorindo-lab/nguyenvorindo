@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MODE. — Tạp chí thời trang & làm đẹp</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <a href="index.html" class="logo">MODE<span>.</span></a>
+    <span class="tagline">Thời trang. Xu hướng. Làm đẹp.</span>
+    <div class="masthead-tools">
+      <button class="icon-btn search-toggle">⌕ Tìm kiếm</button>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav-row">
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="tin-tuc.html">Tin tức</a>
+      <a href="su-kien.html">Sự kiện</a>
+      <a href="xu-huong.html">Xu hướng</a>
+      <a href="lam-dep.html">Làm đẹp</a>
+    </nav>
+  </div>
+  <div class="search-panel">
+    <input type="text" placeholder="Tìm bài viết, xu hướng, sản phẩm…">
+    <div class="search-results"></div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow hero-eyebrow" id="hero-eyebrow">Nổi bật hôm nay</div>
+      <h1 class="hero-title" id="hero-title">Đang tải…</h1>
+      <p class="hero-excerpt" id="hero-excerpt"></p>
+      <div class="hero-meta" id="hero-meta"></div>
+      <a class="btn" id="hero-link" href="#">Đọc bài viết</a>
+    </div>
+    <div class="hero-figure">
+      <img id="hero-img" src="" alt="">
+      <div class="cap" id="hero-cap"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIN TỨC ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="dot dot--berry"></span>Tin tức</h2>
+      <a class="see-all" href="tin-tuc.html">Xem tất cả tin tức →</a>
+    </div>
+    <p class="section-desc">Chuyển động mới nhất của làng thời trang trong nước và quốc tế.</p>
+    <div class="grid grid--3" id="home-tin-tuc"></div>
+  </div>
+</section>
+
+<!-- ============ SỰ KIỆN ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="dot dot--gold"></span>Sự kiện</h2>
+      <a class="see-all" href="su-kien.html">Xem tất cả sự kiện →</a>
+    </div>
+    <p class="section-desc">Tuần lễ thời trang, show diễn, triển lãm và những cuộc hẹn không thể bỏ lỡ.</p>
+    <div class="grid grid--3" id="home-su-kien"></div>
+  </div>
+</section>
+
+<!-- ============ XU HƯỚNG ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="dot dot--teal"></span>Xu hướng</h2>
+      <a class="see-all" href="xu-huong.html">Xem tất cả xu hướng →</a>
+    </div>
+    <p class="section-desc">Những gì đang lên ngôi trên đường phố, sàn diễn và mạng xã hội.</p>
+    <div class="grid grid--3" id="home-xu-huong"></div>
+  </div>
+</section>
+
+<!-- ============ LÀM ĐẸP ============ -->
+<section class="section" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="dot dot--rose"></span>Làm đẹp</h2>
+      <a class="see-all" href="lam-dep.html">Xem tất cả làm đẹp →</a>
+    </div>
+    <p class="section-desc">Da, tóc, trang điểm — bí quyết và sản phẩm đáng thử.</p>
+    <div class="grid grid--3" id="home-lam-dep"></div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter">
+  <div class="wrap newsletter-inner">
+    <div>
+      <h3>Đừng bỏ lỡ số tiếp theo</h3>
+      <p>Nhận tóm tắt tin tức, xu hướng và sự kiện thời trang mỗi tuần — trực tiếp vào email của bạn.</p>
+      <div class="newsletter-msg"></div>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Nhập email của bạn">
+      <button type="submit">Đăng ký</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER — SITEMAP DẠNG MỤC LỤC TẠP CHÍ ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="toc-head">
+      <h2>Mục lục trang</h2>
+      <span class="eyebrow" style="color:var(--ink-soft)">Sơ đồ website</span>
+    </div>
+    <div class="toc-cols">
+      <div>
+        <span class="toc-col-title">Chính</span>
+        <div class="toc-row"><a href="index.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Trang chủ</span><span class="leader"></span><span class="toc-num">HOME</span></a></div>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Giới thiệu MODE.</span><span class="leader"></span><span class="toc-num">—</span></a></div>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Liên hệ toà soạn</span><span class="leader"></span><span class="toc-num">—</span></a></div>
+      </div>
+      <div>
+        <span class="toc-col-title">Chủ đề</span>
+        <div class="toc-row"><a href="tin-tuc.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Tin tức</span><span class="leader"></span><span class="toc-num">01</span></a></div>
+        <div class="toc-row"><a href="su-kien.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Sự kiện</span><span class="leader"></span><span class="toc-num">02</span></a></div>
+        <div class="toc-row"><a href="xu-huong.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Xu hướng</span><span class="leader"></span><span class="toc-num">03</span></a></div>
+        <div class="toc-row"><a href="lam-dep.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Làm đẹp</span><span class="leader"></span><span class="toc-num">04</span></a></div>
+      </div>
+      <div>
+        <span class="toc-col-title">Đang được đọc nhiều</span>
+        <div class="toc-row"><a href="bai-viet.html?id=1" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Vải tái chế của An Nhiên</span><span class="leader"></span><span class="toc-num">#01</span></a></div>
+        <div class="toc-row"><a href="bai-viet.html?id=9" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Gam màu đất nung</span><span class="leader"></span><span class="toc-num">#09</span></a></div>
+        <div class="toc-row"><a href="bai-viet.html?id=13" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Trang điểm da căng bóng</span><span class="leader"></span><span class="toc-num">#13</span></a></div>
+        <div class="toc-row"><a href="bai-viet.html?id=5" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Tuần lễ Thời trang Mùa Thu</span><span class="leader"></span><span class="toc-num">#05</span></a></div>
+      </div>
+      <div>
+        <span class="toc-col-title">Theo dõi MODE.</span>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Facebook</span><span class="leader"></span><span class="toc-num">↗</span></a></div>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Instagram</span><span class="leader"></span><span class="toc-num">↗</span></a></div>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Bản tin email</span><span class="leader"></span><span class="toc-num">↗</span></a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MODE. — Tạp chí thời trang & làm đẹp trong và ngoài nước.</span>
+      <span>Nội dung minh hoạ cho mục đích học tập.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Lên đầu trang">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>window.PageInit = renderHome;</script>
+</body>
+</html>
