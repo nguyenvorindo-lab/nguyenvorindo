@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài viết — MODE.</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress-bar"></div>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <a href="index.html" class="logo">MODE<span>.</span></a>
+    <span class="tagline">Thời trang. Xu hướng. Làm đẹp.</span>
+    <div class="masthead-tools">
+      <button class="icon-btn search-toggle">⌕ Tìm kiếm</button>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav-row">
+    <nav class="nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="tin-tuc.html">Tin tức</a>
+      <a href="su-kien.html">Sự kiện</a>
+      <a href="xu-huong.html">Xu hướng</a>
+      <a href="lam-dep.html">Làm đẹp</a>
+    </nav>
+  </div>
+  <div class="search-panel">
+    <input type="text" placeholder="Tìm bài viết, xu hướng, sản phẩm…">
+    <div class="search-results"></div>
+  </div>
+</header>
+
+<article class="article-head">
+  <div class="wrap">
+    <span class="tag" id="art-tag">Chủ đề</span>
+    <h1 id="art-title">Đang tải bài viết…</h1>
+    <div class="article-meta" id="art-meta"></div>
+  </div>
+</article>
+
+<div class="wrap">
+  <div class="article-figure"><img id="art-img" src="" alt=""></div>
+</div>
+
+<div class="wrap">
+  <div class="layout-2col">
+    <div>
+      <div class="event-info-box" id="event-box" style="display:none;"></div>
+      <div class="article-body" id="art-body"></div>
+      <div class="article-tags" id="art-tags"></div>
+      <div class="share-row">
+        <span class="eyebrow">Chia sẻ:</span>
+        <button class="btn btn--ghost btn--sm" id="share-fb">Facebook</button>
+        <button class="btn btn--ghost btn--sm" id="share-x">X / Twitter</button>
+        <button class="btn btn--ghost btn--sm" id="share-copy">Sao chép liên kết</button>
+      </div>
+    </div>
+    <aside>
+      <div class="sidebar-box">
+        <h3>Chủ đề đang xem</h3>
+        <p style="color:var(--ink-soft); font-size:14.5px; margin:0;">Khám phá thêm các bài viết cùng chủ đề ở menu phía trên, hoặc xem gợi ý bên dưới.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ============ BÀI VIẾT LIÊN QUAN ============ -->
+<section class="related-section">
+  <div class="wrap">
+    <div class="section-head" style="border-bottom-color: var(--line-strong);">
+      <h2>Bài viết liên quan</h2>
+    </div>
+    <div class="grid grid--4" id="related-grid"></div>
+  </div>
+</section>
+
+<!-- ============ Ý KIẾN ĐỘC GIẢ ============ -->
+<section class="comments-section">
+  <div class="wrap" style="max-width: 760px;">
+    <div class="comments-head">
+      <h2>Ý kiến độc giả</h2>
+      <span class="comment-count"><span id="comment-count">0</span> bình luận</span>
+    </div>
+
+    <form class="comment-form" id="comment-form">
+      <div class="row">
+        <input type="text" id="c-name" placeholder="Tên của bạn" maxlength="40">
+      </div>
+      <textarea id="c-text" placeholder="Chia sẻ ý kiến của bạn về bài viết này…" maxlength="500"></textarea>
+      <button type="submit" class="btn btn--sm">Gửi bình luận</button>
+      <div class="form-msg" id="comment-form-msg"></div>
+    </form>
+
+    <div id="comment-list"></div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="wrap newsletter-inner">
+    <div>
+      <h3>Đừng bỏ lỡ số tiếp theo</h3>
+      <p>Nhận tóm tắt tin tức, xu hướng và sự kiện thời trang mỗi tuần — trực tiếp vào email của bạn.</p>
+      <div class="newsletter-msg"></div>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Nhập email của bạn">
+      <button type="submit">Đăng ký</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="toc-head">
+      <h2>Mục lục trang</h2>
+      <span class="eyebrow" style="color:var(--ink-soft)">Sơ đồ website</span>
+    </div>
+    <div class="toc-cols">
+      <div>
+        <span class="toc-col-title">Chính</span>
+        <div class="toc-row"><a href="index.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Trang chủ</span><span class="leader"></span><span class="toc-num">HOME</span></a></div>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Giới thiệu MODE.</span><span class="leader"></span><span class="toc-num">—</span></a></div>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Liên hệ toà soạn</span><span class="leader"></span><span class="toc-num">—</span></a></div>
+      </div>
+      <div>
+        <span class="toc-col-title">Chủ đề</span>
+        <div class="toc-row"><a href="tin-tuc.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Tin tức</span><span class="leader"></span><span class="toc-num">01</span></a></div>
+        <div class="toc-row"><a href="su-kien.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Sự kiện</span><span class="leader"></span><span class="toc-num">02</span></a></div>
+        <div class="toc-row"><a href="xu-huong.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Xu hướng</span><span class="leader"></span><span class="toc-num">03</span></a></div>
+        <div class="toc-row"><a href="lam-dep.html" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Làm đẹp</span><span class="leader"></span><span class="toc-num">04</span></a></div>
+      </div>
+      <div>
+        <span class="toc-col-title">Đang được đọc nhiều</span>
+        <div class="toc-row"><a href="bai-viet.html?id=1" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Vải tái chế của An Nhiên</span><span class="leader"></span><span class="toc-num">#01</span></a></div>
+        <div class="toc-row"><a href="bai-viet.html?id=9" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Gam màu đất nung</span><span class="leader"></span><span class="toc-num">#09</span></a></div>
+        <div class="toc-row"><a href="bai-viet.html?id=13" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Trang điểm da căng bóng</span><span class="leader"></span><span class="toc-num">#13</span></a></div>
+        <div class="toc-row"><a href="bai-viet.html?id=5" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Tuần lễ Thời trang Mùa Thu</span><span class="leader"></span><span class="toc-num">#05</span></a></div>
+      </div>
+      <div>
+        <span class="toc-col-title">Theo dõi MODE.</span>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Facebook</span><span class="leader"></span><span class="toc-num">↗</span></a></div>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Instagram</span><span class="leader"></span><span class="toc-num">↗</span></a></div>
+        <div class="toc-row"><a href="index.html#" style="display:flex;width:100%;align-items:baseline;gap:6px;"><span class="toc-label">Bản tin email</span><span class="leader"></span><span class="toc-num">↗</span></a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MODE. — Tạp chí thời trang & làm đẹp trong và ngoài nước.</span>
+      <span>Nội dung minh hoạ cho mục đích học tập.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Lên đầu trang">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>window.PageInit = renderArticlePage;</script>
+</body>
+</html>
