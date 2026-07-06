@@ -24,7 +24,8 @@ const ARTICLES = [
     category: "tin-tuc",
     title: "Thương hiệu An Nhiên công bố dùng 100% vải tái chế từ năm sau",
     excerpt: "Một cam kết hiếm thấy từ một thương hiệu nội địa: toàn bộ dây chuyền sản xuất sẽ chuyển sang vải sợi tái chế trong vòng 12 tháng.",
-    image: "seed/annhien-1/900/600",
+    // ĐÂY LÀ CHỖ CẦN SỬA:
+    image: "https://vaimaycaocap.com/wp-content/uploads/2021/05/vai-tai-che-vai-may-cao-cap-thomas-nguyen.png",
     date: "2026-07-01",
     author: "Thu Hà",
     tags: ["bền vững", "thương hiệu Việt", "sản xuất"],
