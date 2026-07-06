@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MODE. — Tạp chí thời trang & làm đẹp</title>
+<title>Sự kiện — MODE.</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,72 +32,33 @@
   </div>
 </header>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow hero-eyebrow" id="hero-eyebrow">Nổi bật hôm nay</div>
-      <h1 class="hero-title" id="hero-title">Đang tải…</h1>
-      <p class="hero-excerpt" id="hero-excerpt"></p>
-      <div class="hero-meta" id="hero-meta"></div>
-      <a class="btn" id="hero-link" href="#">Đọc bài viết</a>
-    </div>
-    <div class="hero-figure">
-      <img id="hero-img" src="" alt="">
-      <div class="cap" id="hero-cap"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TIN TỨC ============ -->
-<section class="section">
+<section class="cat-banner">
   <div class="wrap">
-    <div class="section-head">
-      <h2><span class="dot dot--berry"></span>Tin tức</h2>
-      <a class="see-all" href="tin-tuc.html">Xem tất cả tin tức →</a>
-    </div>
-    <p class="section-desc">Chuyển động mới nhất của làng thời trang trong nước và quốc tế.</p>
-    <div class="grid grid--3" id="home-tin-tuc"></div>
+    <div class="eyebrow" id="cat-eyebrow">Chủ đề</div>
+    <h1 id="cat-title">…</h1>
+    <p id="cat-desc"></p>
+    <div class="filters" id="filters"></div>
   </div>
 </section>
 
-<!-- ============ SỰ KIỆN ============ -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2><span class="dot dot--gold"></span>Sự kiện</h2>
-      <a class="see-all" href="su-kien.html">Xem tất cả sự kiện →</a>
-    </div>
-    <p class="section-desc">Tuần lễ thời trang, show diễn, triển lãm và những cuộc hẹn không thể bỏ lỡ.</p>
-    <div class="grid grid--3" id="home-su-kien"></div>
-  </div>
-</section>
-
-<!-- ============ XU HƯỚNG ============ -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2><span class="dot dot--teal"></span>Xu hướng</h2>
-      <a class="see-all" href="xu-huong.html">Xem tất cả xu hướng →</a>
-    </div>
-    <p class="section-desc">Những gì đang lên ngôi trên đường phố, sàn diễn và mạng xã hội.</p>
-    <div class="grid grid--3" id="home-xu-huong"></div>
-  </div>
-</section>
-
-<!-- ============ LÀM ĐẸP ============ -->
 <section class="section" style="border-bottom:none;">
-  <div class="wrap">
-    <div class="section-head">
-      <h2><span class="dot dot--rose"></span>Làm đẹp</h2>
-      <a class="see-all" href="lam-dep.html">Xem tất cả làm đẹp →</a>
+  <div class="wrap layout-2col">
+    <div>
+      <div class="grid grid--3" id="cat-grid"></div>
+      <p class="no-results hidden" id="no-results">Không có bài viết phù hợp với bộ lọc hiện tại.</p>
+      <div class="loadmore-wrap">
+        <button class="btn btn--ghost" id="loadmore-btn">Xem thêm bài viết</button>
+      </div>
     </div>
-    <p class="section-desc">Da, tóc, trang điểm — bí quyết và sản phẩm đáng thử.</p>
-    <div class="grid grid--3" id="home-lam-dep"></div>
+    <aside>
+      <div class="sidebar-box">
+        <h3>Đọc thêm chủ đề khác</h3>
+        <div id="sidebar-trending"></div>
+      </div>
+    </aside>
   </div>
 </section>
 
-<!-- ============ NEWSLETTER ============ -->
 <section class="newsletter">
   <div class="wrap newsletter-inner">
     <div>
@@ -112,7 +73,6 @@
   </div>
 </section>
 
-<!-- ============ FOOTER — SITEMAP DẠNG MỤC LỤC TẠP CHÍ ============ -->
 <footer class="site-footer">
   <div class="wrap">
     <div class="toc-head">
@@ -159,6 +119,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
-<script>window.PageInit = renderHome;</script>
+<script>window.PageInit = function () { renderCategoryPage("su-kien"); };</script>
 </body>
 </html>

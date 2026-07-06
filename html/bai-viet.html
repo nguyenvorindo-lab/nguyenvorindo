@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MODE. — Tạp chí thời trang & làm đẹp</title>
+<title>Bài viết — MODE.</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<div class="progress-bar"></div>
 
 <header class="masthead">
   <div class="masthead-top">
@@ -32,72 +34,71 @@
   </div>
 </header>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="wrap hero-grid">
+<article class="article-head">
+  <div class="wrap">
+    <span class="tag" id="art-tag">Chủ đề</span>
+    <h1 id="art-title">Đang tải bài viết…</h1>
+    <div class="article-meta" id="art-meta"></div>
+  </div>
+</article>
+
+<div class="wrap">
+  <div class="article-figure"><img id="art-img" src="" alt=""></div>
+</div>
+
+<div class="wrap">
+  <div class="layout-2col">
     <div>
-      <div class="eyebrow hero-eyebrow" id="hero-eyebrow">Nổi bật hôm nay</div>
-      <h1 class="hero-title" id="hero-title">Đang tải…</h1>
-      <p class="hero-excerpt" id="hero-excerpt"></p>
-      <div class="hero-meta" id="hero-meta"></div>
-      <a class="btn" id="hero-link" href="#">Đọc bài viết</a>
+      <div class="event-info-box" id="event-box" style="display:none;"></div>
+      <div class="article-body" id="art-body"></div>
+      <div class="article-tags" id="art-tags"></div>
+      <div class="share-row">
+        <span class="eyebrow">Chia sẻ:</span>
+        <button class="btn btn--ghost btn--sm" id="share-fb">Facebook</button>
+        <button class="btn btn--ghost btn--sm" id="share-x">X / Twitter</button>
+        <button class="btn btn--ghost btn--sm" id="share-copy">Sao chép liên kết</button>
+      </div>
     </div>
-    <div class="hero-figure">
-      <img id="hero-img" src="" alt="">
-      <div class="cap" id="hero-cap"></div>
-    </div>
+    <aside>
+      <div class="sidebar-box">
+        <h3>Chủ đề đang xem</h3>
+        <p style="color:var(--ink-soft); font-size:14.5px; margin:0;">Khám phá thêm các bài viết cùng chủ đề ở menu phía trên, hoặc xem gợi ý bên dưới.</p>
+      </div>
+    </aside>
   </div>
-</section>
+</div>
 
-<!-- ============ TIN TỨC ============ -->
-<section class="section">
+<!-- ============ BÀI VIẾT LIÊN QUAN ============ -->
+<section class="related-section">
   <div class="wrap">
-    <div class="section-head">
-      <h2><span class="dot dot--berry"></span>Tin tức</h2>
-      <a class="see-all" href="tin-tuc.html">Xem tất cả tin tức →</a>
+    <div class="section-head" style="border-bottom-color: var(--line-strong);">
+      <h2>Bài viết liên quan</h2>
     </div>
-    <p class="section-desc">Chuyển động mới nhất của làng thời trang trong nước và quốc tế.</p>
-    <div class="grid grid--3" id="home-tin-tuc"></div>
+    <div class="grid grid--4" id="related-grid"></div>
   </div>
 </section>
 
-<!-- ============ SỰ KIỆN ============ -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2><span class="dot dot--gold"></span>Sự kiện</h2>
-      <a class="see-all" href="su-kien.html">Xem tất cả sự kiện →</a>
+<!-- ============ Ý KIẾN ĐỘC GIẢ ============ -->
+<section class="comments-section">
+  <div class="wrap" style="max-width: 760px;">
+    <div class="comments-head">
+      <h2>Ý kiến độc giả</h2>
+      <span class="comment-count"><span id="comment-count">0</span> bình luận</span>
     </div>
-    <p class="section-desc">Tuần lễ thời trang, show diễn, triển lãm và những cuộc hẹn không thể bỏ lỡ.</p>
-    <div class="grid grid--3" id="home-su-kien"></div>
+
+    <form class="comment-form" id="comment-form">
+      <div class="row">
+        <input type="text" id="c-name" placeholder="Tên của bạn" maxlength="40">
+      </div>
+      <textarea id="c-text" placeholder="Chia sẻ ý kiến của bạn về bài viết này…" maxlength="500"></textarea>
+      <button type="submit" class="btn btn--sm">Gửi bình luận</button>
+      <div class="form-msg" id="comment-form-msg"></div>
+    </form>
+
+    <div id="comment-list"></div>
   </div>
 </section>
 
-<!-- ============ XU HƯỚNG ============ -->
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2><span class="dot dot--teal"></span>Xu hướng</h2>
-      <a class="see-all" href="xu-huong.html">Xem tất cả xu hướng →</a>
-    </div>
-    <p class="section-desc">Những gì đang lên ngôi trên đường phố, sàn diễn và mạng xã hội.</p>
-    <div class="grid grid--3" id="home-xu-huong"></div>
-  </div>
-</section>
-
-<!-- ============ LÀM ĐẸP ============ -->
-<section class="section" style="border-bottom:none;">
-  <div class="wrap">
-    <div class="section-head">
-      <h2><span class="dot dot--rose"></span>Làm đẹp</h2>
-      <a class="see-all" href="lam-dep.html">Xem tất cả làm đẹp →</a>
-    </div>
-    <p class="section-desc">Da, tóc, trang điểm — bí quyết và sản phẩm đáng thử.</p>
-    <div class="grid grid--3" id="home-lam-dep"></div>
-  </div>
-</section>
-
-<!-- ============ NEWSLETTER ============ -->
 <section class="newsletter">
   <div class="wrap newsletter-inner">
     <div>
@@ -112,7 +113,6 @@
   </div>
 </section>
 
-<!-- ============ FOOTER — SITEMAP DẠNG MỤC LỤC TẠP CHÍ ============ -->
 <footer class="site-footer">
   <div class="wrap">
     <div class="toc-head">
@@ -159,6 +159,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
-<script>window.PageInit = renderHome;</script>
+<script>window.PageInit = renderArticlePage;</script>
 </body>
 </html>
