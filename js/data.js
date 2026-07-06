@@ -306,10 +306,10 @@ const SEED_COMMENTS = {
 };
 
 function imgUrl(seedPath) {
-  // Nếu đó là một đường dẫn ảnh thật (có http), trả về nó luôn
+  // Nếu dữ liệu ảnh trong ARTICLES đã là link http, lấy link đó
   if (seedPath && seedPath.startsWith('http')) {
     return seedPath;
   }
-  // Nếu không, mới dùng ảnh mặc định của picsum
+  // Nếu chưa có, dùng ảnh từ picsum làm ảnh mẫu (để đỡ bị lỗi)
   return `https://picsum.photos/${seedPath}`;
 }
